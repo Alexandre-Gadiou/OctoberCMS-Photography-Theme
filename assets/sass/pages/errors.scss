@@ -1,0 +1,24 @@
+// pages/errors.scss
+
+.error404, .error500 {
+    .jumbotron {
+        h1 {
+            font-size: 36px;
+        }
+    }
+}
+
+// Mobile
+@media (max-width:$screen-xs-max)
+{
+    .error404, .error500 {
+        .jumbotron {
+            h1 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}

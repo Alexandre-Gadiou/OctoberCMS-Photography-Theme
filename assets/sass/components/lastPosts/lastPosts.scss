@@ -1,0 +1,15 @@
+.lastPosts {
+    list-style: none;
+    padding:0;
+
+    li+li {
+        margin-top: 50px;
+    }
+
+    // Mobile
+    @media (max-width:$screen-sm) {
+        li+li {
+            margin-top: 30px;
+        }
+    }
+}

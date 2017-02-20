@@ -1,0 +1,62 @@
+description = "Contact Form"
+
+[staticMenu mainMenu]
+code = "menu"
+
+[staticPage]
+
+
+[scrolltop]
+
+
+[googleTracker]
+==
+{variable tab="Editorial" type="text" name="pageTitle" label="Title"}{/variable}
+
+
+<!DOCTYPE html>
+<html>
+
+    {% partial 'head' %}
+
+    <body id="{{ this.page.layout }}" class="{{ this.page.layout }}">
+
+        {% partial "microdatas" %}
+
+        {% partial 'header' %}
+
+        {% partial 'menu' %}
+
+        <!-- Content -->
+        <section class="page-content">
+            <div class="container">
+                <div class="col-xs-12">
+                    {% partial 'page-title.htm' %}
+                </div>
+
+                <div class="introduction col-xs-12 col-sm-offset-2 col-sm-8">
+                    {% content 'blocks/contact-text' %}
+                </div>
+
+                <div class="col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-5">
+                    {% page %}
+                </div>    
+            </div>       
+        </section>
+
+        <div id="social-bar">
+            {% placeholder social title="Social" %}
+        </div>
+
+        <footer role="contentinfo">
+            {% content 'blocks/footer' %}
+        </footer>
+
+        {% component "scrolltop" %}
+        {% partial "javascript" %}
+
+        {% if config('app.platform')!='Macbook_Alexandre' %}
+        {% component "googleTracker" %}
+        {% endif %}
+    </body>
+</html>

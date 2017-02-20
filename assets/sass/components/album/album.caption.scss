@@ -1,0 +1,128 @@
+// album-caption.scss
+
+.grid-block {
+    position: relative;
+    float: left;
+    width: 300px;
+}
+.album-caption h2
+{
+    font-size : 17.5px;
+}
+
+.album-caption {
+    display: none;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.section-album:hover{
+    cursor: pointer;
+}
+
+@media (min-width:1200px){.album-caption{padding-top:90px;}}
+@media (min-width:980px) and (max-width:1199px){.album-caption{padding-top:70px;}}
+@media (min-width:768px) and (max-width:979px){.album-caption{padding-top:50px;}}
+@media (min-width:401px) and (max-width:480px){.album-caption{padding-top:100px;}}
+@media (max-width:400px){.album-caption{padding-top:85px;}}
+
+
+@media (min-width:481px) and (max-width:483px){.album-caption {padding-top:120px!important;}}
+@media (min-width:484px) and (max-width:486px){.album-caption {padding-top:120px!important;}}
+@media (min-width:487px) and (max-width:489px){.album-caption {padding-top:121px!important;}}
+@media (min-width:490px) and (max-width:492px){.album-caption {padding-top:122px!important;}}
+@media (min-width:493px) and (max-width:495px){.album-caption {padding-top:123px!important;}}
+@media (min-width:496px) and (max-width:498px){.album-caption {padding-top:123px!important;}}
+@media (min-width:499px) and (max-width:501px){.album-caption {padding-top:124px!important;}}
+@media (min-width:502px) and (max-width:504px){.album-caption {padding-top:125px!important;}}
+@media (min-width:505px) and (max-width:507px){.album-caption {padding-top:126px!important;}}
+@media (min-width:508px) and (max-width:510px){.album-caption {padding-top:126px!important;}}
+@media (min-width:511px) and (max-width:513px){.album-caption {padding-top:127px!important;}}
+@media (min-width:514px) and (max-width:516px){.album-caption {padding-top:128px!important;}}
+@media (min-width:517px) and (max-width:519px){.album-caption {padding-top:129px!important;}}
+@media (min-width:520px) and (max-width:522px){.album-caption {padding-top:129px!important;}}
+@media (min-width:523px) and (max-width:525px){.album-caption {padding-top:130px!important;}}
+@media (min-width:526px) and (max-width:528px){.album-caption {padding-top:131px!important;}}
+@media (min-width:529px) and (max-width:531px){.album-caption {padding-top:132px!important;}}
+@media (min-width:532px) and (max-width:534px){.album-caption {padding-top:132px!important;}}
+@media (min-width:535px) and (max-width:537px){.album-caption {padding-top:133px!important;}}
+@media (min-width:538px) and (max-width:540px){.album-caption {padding-top:134px!important;}}
+@media (min-width:541px) and (max-width:543px){.album-caption {padding-top:135px!important;}}
+@media (min-width:544px) and (max-width:546px){.album-caption {padding-top:135px!important;}}
+@media (min-width:547px) and (max-width:549px){.album-caption {padding-top:136px!important;}}
+@media (min-width:550px) and (max-width:552px){.album-caption {padding-top:137px!important;}}
+@media (min-width:553px) and (max-width:555px){.album-caption {padding-top:137px!important;}}
+@media (min-width:556px) and (max-width:558px){.album-caption {padding-top:138px!important;}}
+@media (min-width:559px) and (max-width:561px){.album-caption {padding-top:139px!important;}}
+@media (min-width:562px) and (max-width:564px){.album-caption {padding-top:140px!important;}}
+@media (min-width:565px) and (max-width:567px){.album-caption {padding-top:140px!important;}}
+@media (min-width:568px) and (max-width:570px){.album-caption {padding-top:141px!important;}}
+@media (min-width:571px) and (max-width:573px){.album-caption {padding-top:142px!important;}}
+@media (min-width:574px) and (max-width:576px){.album-caption {padding-top:143px!important;}}
+@media (min-width:577px) and (max-width:579px){.album-caption {padding-top:143px!important;}}
+@media (min-width:580px) and (max-width:582px){.album-caption {padding-top:144px!important;}}
+@media (min-width:583px) and (max-width:585px){.album-caption {padding-top:145px!important;}}
+@media (min-width:586px) and (max-width:588px){.album-caption {padding-top:146px!important;}}
+@media (min-width:589px) and (max-width:591px){.album-caption {padding-top:146px!important;}}
+@media (min-width:592px) and (max-width:594px){.album-caption {padding-top:147px!important;}}
+@media (min-width:595px) and (max-width:597px){.album-caption {padding-top:148px!important;}}
+@media (min-width:598px) and (max-width:600px){.album-caption {padding-top:149px!important;}}
+@media (min-width:601px) and (max-width:603px){.album-caption {padding-top:149px!important;}}
+@media (min-width:604px) and (max-width:606px){.album-caption {padding-top:150px!important;}}
+@media (min-width:607px) and (max-width:609px){.album-caption {padding-top:151px!important;}}
+@media (min-width:610px) and (max-width:612px){.album-caption {padding-top:152px!important;}}
+@media (min-width:613px) and (max-width:615px){.album-caption {padding-top:152px!important;}}
+@media (min-width:616px) and (max-width:618px){.album-caption {padding-top:153px!important;}}
+@media (min-width:619px) and (max-width:621px){.album-caption {padding-top:154px!important;}}
+@media (min-width:622px) and (max-width:624px){.album-caption {padding-top:155px!important;}}
+@media (min-width:625px) and (max-width:627px){.album-caption {padding-top:155px!important;}}
+@media (min-width:628px) and (max-width:630px){.album-caption {padding-top:156px!important;}}
+@media (min-width:631px) and (max-width:633px){.album-caption {padding-top:157px!important;}}
+@media (min-width:634px) and (max-width:636px){.album-caption {padding-top:158px!important;}}
+@media (min-width:637px) and (max-width:639px){.album-caption {padding-top:158px!important;}}
+@media (min-width:640px) and (max-width:642px){.album-caption {padding-top:159px!important;}}
+@media (min-width:643px) and (max-width:645px){.album-caption {padding-top:160px!important;}}
+@media (min-width:646px) and (max-width:648px){.album-caption {padding-top:161px!important;}}
+@media (min-width:649px) and (max-width:651px){.album-caption {padding-top:161px!important;}}
+@media (min-width:652px) and (max-width:654px){.album-caption {padding-top:162px!important;}}
+@media (min-width:655px) and (max-width:657px){.album-caption {padding-top:163px!important;}}
+@media (min-width:658px) and (max-width:660px){.album-caption {padding-top:163px!important;}}
+@media (min-width:661px) and (max-width:663px){.album-caption {padding-top:164px!important;}}
+@media (min-width:664px) and (max-width:666px){.album-caption {padding-top:165px!important;}}
+@media (min-width:667px) and (max-width:669px){.album-caption {padding-top:166px!important;}}
+@media (min-width:670px) and (max-width:672px){.album-caption {padding-top:166px!important;}}
+@media (min-width:673px) and (max-width:675px){.album-caption {padding-top:167px!important;}}
+@media (min-width:676px) and (max-width:678px){.album-caption {padding-top:168px!important;}}
+@media (min-width:679px) and (max-width:681px){.album-caption {padding-top:169px!important;}}
+@media (min-width:682px) and (max-width:684px){.album-caption {padding-top:169px!important;}}
+@media (min-width:685px) and (max-width:687px){.album-caption {padding-top:170px!important;}}
+@media (min-width:688px) and (max-width:690px){.album-caption {padding-top:171px!important;}}
+@media (min-width:691px) and (max-width:693px){.album-caption {padding-top:172px!important;}}
+@media (min-width:694px) and (max-width:696px){.album-caption {padding-top:172px!important;}}
+@media (min-width:697px) and (max-width:699px){.album-caption {padding-top:173px!important;}}
+@media (min-width:700px) and (max-width:702px){.album-caption {padding-top:174px!important;}}
+@media (min-width:703px) and (max-width:705px){.album-caption {padding-top:175px!important;}}
+@media (min-width:706px) and (max-width:708px){.album-caption {padding-top:175px!important;}}
+@media (min-width:709px) and (max-width:711px){.album-caption {padding-top:176px!important;}}
+@media (min-width:712px) and (max-width:714px){.album-caption {padding-top:177px!important;}}
+@media (min-width:715px) and (max-width:717px){.album-caption {padding-top:178px!important;}}
+@media (min-width:718px) and (max-width:720px){.album-caption {padding-top:178px!important;}}
+@media (min-width:721px) and (max-width:723px){.album-caption {padding-top:179px!important;}}
+@media (min-width:724px) and (max-width:726px){.album-caption {padding-top:180px!important;}}
+@media (min-width:727px) and (max-width:729px){.album-caption {padding-top:181px!important;}}
+@media (min-width:730px) and (max-width:732px){.album-caption {padding-top:181px!important;}}
+@media (min-width:733px) and (max-width:735px){.album-caption {padding-top:182px!important;}}
+@media (min-width:736px) and (max-width:738px){.album-caption {padding-top:183px!important;}}
+@media (min-width:739px) and (max-width:741px){.album-caption {padding-top:184px!important;}}
+@media (min-width:742px) and (max-width:744px){.album-caption {padding-top:184px!important;}}
+@media (min-width:745px) and (max-width:747px){.album-caption {padding-top:185px!important;}}
+@media (min-width:748px) and (max-width:751px){.album-caption {padding-top:186px!important;}}
+@media (min-width:752px) and (max-width:755px){.album-caption {padding-top:187px!important;}}
+@media (min-width:756px) and (max-width:759px){.album-caption {padding-top:188px!important;}}
+@media (min-width:760px) and (max-width:764px){.album-caption {padding-top:189px!important;}}
+@media (min-width:765px) and (max-width:767px){.album-caption {padding-top:190px!important;}}

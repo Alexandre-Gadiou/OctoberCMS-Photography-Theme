@@ -1,0 +1,19 @@
+static-pages:
+    accueil: {  }
+    mariages:
+        mariages-photos-mariages: {  }
+        mariages-tarifs: {  }
+    portraits:
+        portraits-photos: {  }
+        portraits-tarifs: {  }
+    maternite:
+        maternite-grossesses: {  }
+        maternite-bebes: {  }
+        maternite-tarifs: {  }
+    portfolio: {  }
+    vos-petits-mots: {  }
+    contact:
+        contact-a-propos: {  }
+    mentions: {  }
+    protected:
+        protected-albumprotege: {  }

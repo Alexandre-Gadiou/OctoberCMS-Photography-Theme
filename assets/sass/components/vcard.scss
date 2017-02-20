@@ -1,0 +1,63 @@
+// vcard.less
+
+.vcard {
+
+    $vcard-header-color-1: rgb(243,243,243);
+    $vcard-header-color-2: rgb(250,250,250);
+    $vcard-border-color: rgb(213, 213, 213);
+    $vcard-content-color: #FFFFFF;
+
+    min-width: 200px;
+    margin-bottom: 20px;
+    border: 1px solid $vcard-border-color;
+    @include border-radius(4px,4px,4px,4px);
+
+    .vcard-header {
+        @include border-radius(4px,4px,0px,0px);
+        border-bottom: 1px solid $vcard-border-color;
+        background-color: $vcard-header-color-1;
+        background-repeat: repeat-x;
+        background-image: -khtml-gradient(linear, left top, left bottom, from($vcard-header-color-2), to($vcard-header-color-1)); // Konqueror
+        background-image: -moz-linear-gradient($vcard-header-color-2, $vcard-header-color-1); // FF 3.6+
+        background-image: -ms-linear-gradient($vcard-header-color-2, $vcard-header-color-1); // IE10
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $vcard-header-color-2), color-stop(100%, $vcard-header-color-1)); // Safari 4+, Chrome 2+
+        background-image: -webkit-linear-gradient($vcard-header-color-2, $vcard-header-color-1); // Safari 5.1+, Chrome 10+
+        background-image: -o-linear-gradient($vcard-header-color-2, $vcard-header-color-1); // Opera 11.10
+        background-image: linear-gradient($vcard-header-color-2, $vcard-header-color-1); // The standard
+        padding: 10px 20px;
+
+        h1 {
+            display: inline-block;
+            margin: 0px;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 18px;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+        }
+    }
+
+    .vcard-content{
+        background: $vcard-content-color;
+        @include border-radius(0px,0px,4px,4px);
+        padding: 10px 10px 10px 10px;
+
+        .glyph
+        {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            margin-right: 5px;
+            vertical-align: bottom;   
+        }
+    }
+}
+
+
+// Mobile device only
+@media (max-width: $screen-xs-max) {
+    .vcard {
+        margin-top:15px;
+    }
+}
+
+

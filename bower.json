@@ -1,0 +1,18 @@
+{
+    "name": "photography-theme",
+    "version": "0.0.0",
+    "description": "OctoberCMS theme for photography",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "devDependencies": {
+        "jquery": "~1.11.1",
+        "font-awesome": "fontawesome#~4.4.0",
+        "bootstrap-sass": "~3.3.5",
+        "bootstrap-submenu": "~2.0.4"
+    }
+}

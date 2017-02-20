@@ -1,0 +1,34 @@
+description = "Create a agenda"
+
+[viewBag]
+snippetCode = "BootstrapAgenda"
+snippetName = "Bootstrap Agenda"
+snippetProperties[width][type] = "string"
+snippetProperties[width][title] = "Width"
+snippetProperties[width][default] = "500px"
+snippetProperties[view][type] = "dropdown"
+snippetProperties[view][title] = "View"
+snippetProperties[view][default] = "default"
+snippetProperties[view][options][default] = "standard"
+snippetProperties[marginTop][type] = "string"
+snippetProperties[marginTop][title] = "Margin top"
+snippetProperties[marginTop][default] = "0px"
+snippetProperties[marginBottom][type] = "string"
+snippetProperties[marginBottom][title] = "Margin bottom"
+snippetProperties[marginBottom][default] = "0px"
+snippetProperties[marginLeft][type] = "string"
+snippetProperties[marginLeft][title] = "Margin left"
+snippetProperties[marginLeft][default] = "0px"
+snippetProperties[marginRight][type] = "string"
+snippetProperties[marginRight][title] = "Margin right"
+snippetProperties[marginRight][default] = "0px"
+
+[agenda]
+photos_folder = "storage/app/media"
+width = "500px"
+view = "default"
+
+==
+<div class="agenda-wrapper" style="margin-top: {{marginTop}};margin-bottom:{{marginBottom}};margin-left:{{marginLeft}};margin-right:{{marginRight}};">
+    {% component 'agenda' width=width view=view %}
+</div>

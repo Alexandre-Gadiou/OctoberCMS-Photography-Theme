@@ -1,0 +1,98 @@
+description = "Simple"
+
+[staticMenu mainMenu]
+code = "menu"
+
+[staticPage]
+
+
+[scrolltop]
+
+
+[googleTracker]
+==
+{variable tab="Editorial" type="text" name="pageTitle" label="Title"}{/variable}
+{variable tab="Price" type="mediafinder" mode="image" name="price1" label="Price 1"}{/variable}
+{variable tab="Price" type="mediafinder" mode="image" name="price2" label="Price 2"}{/variable}
+{variable tab="Price" type="mediafinder" mode="image" name="price3" label="Price 3"}{/variable}
+{variable tab="Banner" type="mediafinder" mode="image" name="banner1" label="Banner 1"}{/variable}
+{variable tab="Banner" type="mediafinder" mode="image" name="banner2" label="Banner 2"}{/variable}
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+    {% partial 'head' %}
+
+    <body id="{{ this.page.layout }}" class="{{ this.page.layout }}">
+
+        {% partial "microdatas" %}
+
+        {% partial 'header' %}
+
+        {% partial 'menu' %}
+
+        <!-- Content -->
+        <section class="page-content">
+            <div class="container">
+
+                {% partial 'page-title.htm' %}
+
+                <div class="price-list row">
+
+                    <div class="price col-xs-12 col-md-4">
+                        {% if price1 %}
+                        <img class="img-responsive" src="{{price1|media}}" alt="price 1">
+                        {% endif %}
+                    </div>
+                    <div class="price col-xs-12 col-md-4">
+                        {% if price2 %}
+                        <img class="img-responsive" src="{{price2|media}}" alt="price 2">
+                        {% endif %}
+                    </div>
+                    <div class="price col-xs-12 col-md-4">
+                        {% if price3 %}
+                        <img class="img-responsive" src="{{price3|media}}" alt="price 3">
+                        {% endif %}
+                    </div>
+
+                </div>
+                <div class="row">
+                    {% page %}
+                </div>
+
+                {% if banner1 %}
+                <div class="photo-banner row hidden-xs">
+                    <img class="img-responsive" src="{{banner1|media}}" alt="banner 1">
+                </div>
+                {% endif %}
+
+                {% if banner2 %}
+                <div class="photo-banner row hidden-xs">
+                    <img class="img-responsive" src="{{banner2|media}}" alt="banner 2">
+                </div>
+                {% endif %}
+
+                <div id="special-offer" class="row">
+                    {% placeholder specialOffers title="Special Offers" %}
+                </div>
+
+            </div>       
+        </section>
+
+
+
+        <footer role="contentinfo">
+            {% content 'blocks/footer' %}
+        </footer>
+
+        {% component "scrolltop" %}
+        {% partial "javascript" %}
+
+        {% if config('app.platform')!='Macbook_Alexandre' %}
+        {% component "googleTracker" %}
+        {% endif %}
+    </body>
+</html>

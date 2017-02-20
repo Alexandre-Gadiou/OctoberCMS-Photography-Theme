@@ -1,0 +1,53 @@
+description = "Visit card"
+
+[viewBag]
+snippetCode = "PhotographyVisitCard"
+snippetName = "Photography Visit Card"
+snippetProperties[cardTitle|type] = "string"
+snippetProperties[cardTitle|title] = "Card Title"
+snippetProperties[phone|type] = "string"
+snippetProperties[phone|title] = "Phone"
+snippetProperties[email|type] = "string"
+snippetProperties[email|title] = "Email"
+snippetProperties[street|type] = "string"
+snippetProperties[street|title] = "Street"
+snippetProperties[zip|type] = "string"
+snippetProperties[zip|title] = "Zip"
+snippetProperties[city|type] = "string"
+snippetProperties[city|title] = "City"
+snippetProperties[country|type] = "string"
+snippetProperties[country|title] = "Country"
+
+==
+<div class="vcard">
+
+    {% if cardTitle %}
+    <div class="vcard-header">
+        <h1>{{cardTitle}}</h1>
+    </div>
+    {% endif %}
+
+    {% if phone or email or street or zip or city or country  %}
+    <div class="vcard-content">
+        {% if phone %}
+        <img class="glyph" alt="cellphone" src="{{'assets/images/util/cellphone.png'|theme }}">
+        <span>{{phone}}</span> <br>     
+        {% endif %}
+
+        {% if email %}
+        <img class="glyph" alt="email" src="{{'assets/images/util/email.png'|theme }}">
+        <span><a class="primary-link" href="/contact">{{email}}</a></span> <br>
+        {% endif %}
+
+        {% if street or zip or city or country %}
+        <img style="vertical-align: top!important;" class="glyph" alt="mail" src="{{'assets/images/util/mail.png'|theme }}">           
+        <div style="display: inline-block;">
+            {{street}}<br>
+            {{zip}} {{city}}<br>
+            {{country}}<br>
+        </div>
+        {% endif %}
+    </div>
+    {% endif %}
+
+</div>

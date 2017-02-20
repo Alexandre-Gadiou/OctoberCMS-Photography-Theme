@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <% include ../partials/head %>
+    </head>
+
+    <body class="home">
+
+        <% include ../partials/header %>
+        <% include ../partials/menu %>
+
+        <!-- Content -->
+        <section class="page-content">
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-offset-0 col-md-12">
+                    <%-pageContent%>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2">
+                    <div class="presentation">
+                        <%-pageSubContent%>
+                    </div>
+                </div>
+            </div>        
+
+        </section>
+
+        <div id="home-assets">
+            <%-homeAssets%>
+        </div>
+
+        <div id="social-bar">
+          <%-pageSocialContent%>
+        </div>
+
+        <% include ../partials/footer %>
+
+        <% include ../partials/javascript %>
+        <% include ../components/scrolltop/scrolltop %>
+
+        <!--{% component "googleTracker" %}-->
+    </body>
+</html>

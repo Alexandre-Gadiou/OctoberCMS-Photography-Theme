@@ -1,0 +1,44 @@
+description = "Create a photo player from a folder in media"
+
+[viewBag]
+snippetCode = "BootstrapCarousel"
+snippetName = "Bootstrap Carousel"
+snippetProperties[photosFolder][type] = "string"
+snippetProperties[photosFolder][title] = "Photos folder"
+snippetProperties[photosFolder][default] = "storage/app/media"
+snippetProperties[sliders][title] = "Show sliders"
+snippetProperties[sliders][type] = "checkbox"
+snippetProperties[sliders][default] = 1
+snippetProperties[sliders][options][] = ""
+snippetProperties[indicators][title] = "Show indicators"
+snippetProperties[indicators][type] = "checkbox"
+snippetProperties[indicators][default] = ""
+snippetProperties[indicators][options][] = ""
+snippetProperties[height][type] = "string"
+snippetProperties[height][title] = "Height"
+snippetProperties[height][default] = "500px"
+snippetProperties[borderRadius][type] = "string"
+snippetProperties[borderRadius][title] = "Border radius"
+snippetProperties[borderRadius][default] = "10px"
+snippetProperties[marginTop][type] = "string"
+snippetProperties[marginTop][title] = "Margin top"
+snippetProperties[marginTop][default] = "0px"
+snippetProperties[marginBottom][type] = "string"
+snippetProperties[marginBottom][title] = "Margin bottom"
+snippetProperties[marginBottom][default] = "0px"
+snippetProperties[marginLeft][type] = "string"
+snippetProperties[marginLeft][title] = "Margin left"
+snippetProperties[marginLeft][default] = "0px"
+snippetProperties[marginRight][type] = "string"
+snippetProperties[marginRight][title] = "Margin right"
+snippetProperties[marginRight][default] = "0px"
+
+[carousel]
+photos_folder = "storage/app/media"
+sliders = 1
+height = "500px"
+borderRadius = "10px"
+==
+<div style="margin-top: {{marginTop}};margin-bottom:{{marginBottom}};margin-left:{{marginLeft}};margin-right:{{marginRight}};">
+    {% component 'carousel' photos_folder=photosFolder sliders=sliders indicators=indicators height=height borderRadius=borderRadius %}
+</div>

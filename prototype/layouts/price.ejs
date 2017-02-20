@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <% include ../partials/head %>
+    </head>
+
+    <body class="price">
+
+        <% include ../partials/header %>
+        <% include ../partials/menu %>
+
+        <!-- Content -->
+        <section class="page-content">
+            <div class="container">
+
+                <h1>
+                    <%-title-%>
+                </h1>
+
+                <div class="price-list row">
+
+                    <div class="price col-xs-12 col-md-4">
+                        <img class="img-responsive" src="<%-price1-%>" alt="price 1">
+                    </div>
+                    <div class="price col-xs-12 col-md-4">
+                        <img class="img-responsive" src="<%-price2-%>" alt="price 2">
+                    </div>
+                    <div class="price col-xs-12 col-md-4">
+                        <img class="img-responsive" src="<%-price3-%>" alt="price 3">
+                    </div>
+
+                </div>
+                <div class="row">
+                    <%-pageContent%>
+                </div>
+
+                <div class="photo-banner row hidden-xs">
+                    <img class="img-responsive" src="<%-banner1-%>" alt="banner 1">
+                </div>
+
+                <div class="photo-banner row hidden-xs">
+                    <img class="img-responsive" src="<%-banner2-%>" alt="banner 2">
+                </div>
+
+                <div id="special-offer" class="row">
+                    <%-specialOffer%>
+                </div>
+
+            </div>       
+        </section>
+
+
+        <% include ../partials/footer %>
+
+        <% include ../partials/javascript %>
+        <% include ../components/scrolltop/scrolltop %>
+
+        <!--{% component "googleTracker" %}-->
+    </body>
+</html>

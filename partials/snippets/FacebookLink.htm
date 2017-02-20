@@ -1,0 +1,14 @@
+description = "Facebook page link"
+
+[viewBag]
+snippetCode = "FacebookLink"
+snippetName = "Facebook Link"
+snippetProperties[facebookPageUrl][type] = "string"
+snippetProperties[facebookPageUrl][title] = "URL"
+snippetProperties[size][type] = "string"
+snippetProperties[size][title] = "Size"
+snippetProperties[size][default] = "20px"
+
+[facebook_page_link]
+==
+{% component 'facebook_page_link' facebook_page_url=facebookPageUrl size=size %}

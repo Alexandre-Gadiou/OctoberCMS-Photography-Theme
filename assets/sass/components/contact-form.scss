@@ -1,0 +1,30 @@
+// contact-form.scss
+
+.contact-form-message {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.success-message {
+    color: rgb(60, 118, 61);
+}
+
+.error-message {
+    color: rgb(169, 68, 66);
+}
+
+#contact-form {
+    .button-bar {
+        text-align: right;
+    }
+
+    label {
+        color:$black;
+    }
+
+    .form-group {
+        .help-block {
+            margin-bottom: 0px;
+        }
+    }
+}

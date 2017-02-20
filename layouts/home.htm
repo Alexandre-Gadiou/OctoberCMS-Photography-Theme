@@ -1,0 +1,64 @@
+description = "Home"
+
+[staticMenu mainMenu]
+code = "menu"
+
+[staticPage]
+
+
+[scrolltop]
+
+
+[googleTracker]
+==
+<!DOCTYPE html>
+<html>
+
+    {% partial 'head' %}
+
+    <body id="{{ this.page.layout }}" class="{{ this.page.layout }}">
+
+        {% partial "microdatas" %}
+
+        {% partial 'header' %}
+
+        {% partial 'menu' %}
+
+        <!-- Content -->
+        <section class="page-content">
+
+            <div class="row">
+                <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2">
+                    {% page %}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2">
+                    <div class="presentation">
+                        {% placeholder subcontent title="Sub Content" %}
+                    </div>
+                </div>
+            </div>        
+
+        </section>
+
+        <div id="home-assets">
+            {% partial 'homeAssets' %}
+        </div>
+
+        <div id="social-bar">
+            {% placeholder social title="Social" %}
+        </div>
+
+        <footer role="contentinfo">
+            {% content 'blocks/footer' %}
+        </footer>
+
+        {% component "scrolltop" %}
+        {% partial "javascript" %}
+
+        {% if config('app.platform')!='Macbook_Alexandre' %}
+        {% component "googleTracker" %}
+        {% endif %}
+    </body>
+</html>

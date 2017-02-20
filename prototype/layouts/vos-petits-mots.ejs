@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <% include ../partials/head %>
+    </head>
+
+    <body class="vos-petits-mots">
+
+        <% include ../partials/header %>
+        <% include ../partials/menu %>
+
+        <section class="page-content">
+            <div class="container">
+                <h1>
+                    <%-title-%>
+                </h1>
+                <%-pageDescription%>
+                <%-pageContent%>
+            </div>       
+        </section>
+
+        <% include ../partials/footer %>
+
+        <% include ../partials/javascript %>
+        <% include ../components/scrolltop/scrolltop %>
+
+        <!--{% component "googleTracker" %}-->
+    </body>
+</html>

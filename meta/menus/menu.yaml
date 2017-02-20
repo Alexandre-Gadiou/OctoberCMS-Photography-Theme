@@ -1,0 +1,113 @@
+name: Menu
+items:
+    -
+        title: Accueil
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: accueil
+        cmsPage: ''
+        replace: '0'
+    -
+        title: Galeries
+        type: url
+        url: '#'
+        code: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+        items:
+            -
+                title: Mariages
+                nesting: '1'
+                type: static-page
+                url: ''
+                code: ''
+                reference: mariages
+                cmsPage: ''
+                replace: '0'
+            -
+                title: Portraits
+                nesting: '1'
+                type: static-page
+                url: ''
+                code: ''
+                reference: portraits
+                cmsPage: ''
+                replace: '0'
+            -
+                title: Maternité
+                nesting: '1'
+                type: static-page
+                url: ''
+                code: ''
+                reference: maternite
+                cmsPage: ''
+                replace: '0'
+            -
+                title: Autres
+                nesting: '1'
+                type: static-page
+                code: ''
+                reference: portfolio
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+    -
+        title: Blog
+        type: cms-page
+        code: ''
+        reference: system/blog
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Vos petits mots'
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: vos-petits-mots
+        cmsPage: ''
+        replace: '0'
+    -
+        title: Contact
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: contact
+        cmsPage: ''
+        replace: '0'
+        items:
+            -
+                title: 'À propos'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: contact-a-propos
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Me contacter'
+                nesting: ''
+                type: cms-page
+                url: ''
+                code: ''
+                reference: me-contacter
+                cmsPage: ''
+                replace: ''
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'

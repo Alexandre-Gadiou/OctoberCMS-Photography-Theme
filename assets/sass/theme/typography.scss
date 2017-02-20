@@ -1,0 +1,37 @@
+// theme/typography.scss
+
+body {
+
+    font-family: Cantarell, serif;
+    color:$default-text-color;
+
+    h1 {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    
+    .primary-link {
+        color:$primary-link-text-color;
+        font-weight:700;
+        
+        &:hover, &:focus {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+    
+    .secondary-link {
+        color:$secondary-link-text-color;
+        font-weight:700;
+        
+        &:hover, &:focus {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+}
+
+

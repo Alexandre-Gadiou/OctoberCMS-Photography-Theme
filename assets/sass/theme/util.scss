@@ -1,0 +1,15 @@
+// theme/util.scss
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-pink {
+    color:$pink1;
+}
+
+a.text-pink{
+    &:hover,&:focus {
+        color: $pink1;
+    } 
+}

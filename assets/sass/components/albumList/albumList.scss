@@ -1,0 +1,137 @@
+.album-list figcaption h2{
+    text-shadow: 0 0 2px #777;
+}
+
+figure.effect-oscar h2 {
+    display:none;
+}
+
+figure.effect-oscar:hover h2 {
+    display:block;
+}
+
+.grid figure {
+    width:32.66%;
+    margin:0.33%;
+} 
+
+figure.effect-oscar figcaption::before {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    border: 1px solid #fff;
+    content: '';
+}
+
+.effect-oscar figcaption p {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 11px;
+}
+
+
+@media (min-width: 1200px) {
+    figure.effect-oscar {
+        height: 250px;
+    }
+    figure.effect-oscar h2 {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    figure.effect-oscar {
+        height: 200px;
+    }
+    figure.effect-oscar h2 {
+        font-size: 20px;
+    }
+    .effect-oscar figcaption p {
+        margin-top: 5px;
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 991px) {
+    figure.effect-oscar {
+        height: 150px;
+    }
+    figure.effect-oscar h2 {
+        font-size: 16px;
+    }
+    .effect-oscar figcaption p {
+        margin-top: 0px;
+        font-size: 8px;
+    }
+}
+
+@media (min-width: 668px) and (max-width: 799px) {
+    figure.effect-oscar {
+        height: 200px;
+    }
+    figure.effect-oscar h2 {
+        font-size: 16px;
+    }
+    .grid figure {
+        width:49.33%;
+        margin:0.33%;
+    }    
+}
+
+@media (min-width: 640px) and (max-width: 677px) {
+    figure.effect-oscar {
+        height: 190px;
+    }
+    figure.effect-oscar h2 {
+        font-size: 16px;
+    }
+    .grid figure {
+        width:49.33%;
+        margin:0.33%;
+    }    
+}
+
+@media (min-width: 401px) and (max-width: 639px) {
+    figure.effect-oscar {
+        height: 230px;
+    }
+    figure.effect-oscar h2 {
+        font-size: 16px;
+    }
+    .grid figure {
+        width:100%;
+        margin:0;
+        margin-bottom: 5px;
+    }    
+}
+
+@media (min-width: 321px) and (max-width: 400px) {
+    figure.effect-oscar {
+        height: 180px;
+    }
+    figure.effect-oscar h2 {
+        font-size: 16px;
+    }
+    .grid figure {
+        width:100%;
+        margin:0;
+        margin-bottom: 10px;
+    }    
+}
+
+
+@media (max-width: 320px) {
+    figure.effect-oscar {
+        height: 170px;
+    }
+    figure.effect-oscar h2 {
+        font-size: 16px;
+    }
+    .grid figure {
+        width:100%;
+        margin:0;
+        margin-bottom: 10px;
+    }    
+}

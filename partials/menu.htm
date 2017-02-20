@@ -1,0 +1,72 @@
+<!-- Define a macro for menu item recursion -->
+{% import _self as nav %}
+{% macro render_menu(items,lvl) %}
+{% import _self as nav %}
+{% for item in items %}
+
+{% if lvl is not divisible by(2) and item.items %}
+{% set css = 'dropdowisn-submenu' %}
+{% set sub = 'data-submenu' %}
+{% endif %}
+
+{% if lvl==0 and item.items %}
+<li class="dropdown">
+    <a data-toggle="dropdown" data-submenu role="button">
+        {{ item.title }} <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu" >
+        {{ nav.render_menu(item.items,lvl+1) }}
+    </ul>
+</li>
+{% endif %}
+
+
+{% if lvl is not divisible by(2) and lvl>0 and item.items%}
+<li class="dropdown-submenu">
+    <a role="button">
+        {{ item.title }}
+    </a>
+    <ul class="dropdown-menu" >
+        {{ nav.render_menu(item.items,lvl+1) }}
+    </ul>
+</li>
+{% endif %}
+
+{% if not item.items %}
+<li>
+    <a href="{{ item.url }}">
+        {{ item.title }}
+    </a>
+</li>
+{% endif %}
+
+
+
+{% endfor %}
+{% endmacro %}
+<!-- /Define a macro for menu item recursion -->
+
+<!-- Nav -->
+<nav class="navbar navbar-default ">
+
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        {% if mainMenu.menuItems %}
+        <div class="collapse navbar-collapse navbar-main-collapse">
+            <ul class="nav navbar-nav">
+                {{ nav.render_menu(mainMenu.menuItems,0) }}
+            </ul>
+        </div>
+        {% endif %}
+    </div>
+
+</nav>
+

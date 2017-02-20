@@ -1,0 +1,43 @@
+.category-list {
+    list-style: none;
+    display:table;
+    width:100%;
+    padding: 0;
+    margin-left:20px;
+    margin-bottom: 30px;
+
+    $listspacing:10px;
+
+    li {
+        display: table-row;
+
+        & > a {
+            color: $default-text-color;
+        }
+
+        & > a , & .badge {
+            padding: $listspacing 0;
+            vertical-align: middle;
+            line-height: 1em;
+        }
+
+        .badge {
+            margin: $listspacing 0;
+            padding:4px;
+            float: right;
+            margin-right: 15px;
+            background-color:$primary-link-text-color;
+        }
+    }
+
+    li > a {
+        float:left;
+    }
+
+    // Mobile
+    @media (max-width:$screen-sm) {
+        margin-top: 20px;
+        margin-left:0;
+    }
+
+}

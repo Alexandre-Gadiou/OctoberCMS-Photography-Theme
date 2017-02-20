@@ -1,0 +1,11 @@
+.DS_Store
+/nbproject/
+/assets/photography/*
+/bower_components/
+/node_modules/
+/prototype/dist/
+/.sass-cache/
+/assets/css/*
+/assets/javascript/main.min.js
+/assets/javascript/main.js
+/assets/vendor/galleria/javascript/galleria.folio.min.js

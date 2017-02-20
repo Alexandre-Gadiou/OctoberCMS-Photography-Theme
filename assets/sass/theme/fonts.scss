@@ -1,0 +1,39 @@
+// theme/fonts.scss
+
+@font-face {
+    font-family: 'Tangerine';
+    src: url(../fonts/Tangerine.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Cantarell.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Lobster Two';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/LobsterTwo.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Doppio One';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/DoppioOne.woff) format('woff');
+}
+
+//
+// Chrome exhibits strange behavior when custom fonts are used
+// on select inputs. This fixes the garbled text.
+//
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select {
+        font-family: sans-serif;
+    }
+}

@@ -1,0 +1,22 @@
+// layouts/all.less
+
+@import "home";
+@import "blog";
+@import "price";
+@import "apropos";
+@import "contact";
+@import "vos-petits-mots";
+
+.page-content {
+    margin-top: 20px;
+}
+
+
+// Mobile device only
+@media (max-width: $screen-xs-max) {
+    body {
+        padding:15px;
+    }
+}
+
+

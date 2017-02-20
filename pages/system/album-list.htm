@@ -1,0 +1,25 @@
+title = "Album List"
+url = "/album-list"
+layout = "simple"
+hidden = "0"
+albums_folder = "storage/app/media"
+
+[album_list]
+albums_folder = "storage/app/media"
+view = "default"
+==
+<?php
+function onStart()
+{
+
+if(isset($_GET['path'])) {
+$this['folder'] = $_GET["path"];
+}
+else {
+$this['folder']= "";
+}
+
+}
+?>
+==
+{% component 'album_list' albums_folder=folder %}

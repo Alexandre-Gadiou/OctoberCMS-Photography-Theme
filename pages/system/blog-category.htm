@@ -1,0 +1,25 @@
+title = "Category"
+url = "/blog/category/:slug"
+layout = "blog"
+is_hidden = 0
+
+[last_posts]
+pageNumber = "{{ :page }}"
+categoryFilter = "{{ :slug }}"
+postsPerPage = 10
+noPostsMessage = "blog.noPostsMessage"
+sortOrder = "published_at desc"
+categoryPage = "system/blog-category"
+postPage = "system/blog-post"
+
+[blogCategories]
+slug = "{{ :slug }}"
+displayEmpty = 0
+categoryPage = "system/blog-category"
+==
+<div class="blogPostList col-xs-12 col-sm-offset-1 col-sm-8">
+    {% component 'last_posts' %}
+</div>
+<div class="blogPostListFilter col-xs-12 col-sm-2">
+    {% component 'blogCategories' %}
+</div>

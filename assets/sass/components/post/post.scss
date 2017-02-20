@@ -1,0 +1,30 @@
+.post {
+    padding: 15px 0;
+
+    .post-picture {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .post-content {
+        margin-bottom: 10px;
+        word-wrap: break-word;
+    }
+
+    .post-info {
+        a {
+            color:$primary-link-text-color;
+        }
+    }
+
+    .post-gallery {
+        margin-top:30px;
+
+        & > img {
+            display:inline-block;
+            max-width:30%;
+            max-height: 170px;
+            overflow: hidden;
+        }
+    }
+}

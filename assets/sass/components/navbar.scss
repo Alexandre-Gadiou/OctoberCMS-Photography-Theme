@@ -1,0 +1,80 @@
+.navbar {
+    font-size: $phy-navbar-font-size;
+    margin-bottom:0;
+    font-weight: 500;
+
+    a {
+        cursor: pointer;
+    }
+
+    &.navbar-default {
+        background-color: $phy-navbar-background-color;
+        border: none;
+
+        .navbar-nav {
+            > li {
+                > a {
+                    padding: 10px 15px;
+                    color: $phy-navbar-link-color;
+                    text-transform: uppercase;
+                }
+
+                &.active {
+                    a {
+                        background: none;
+                    }
+                }
+            }
+
+            li  {
+                a {
+                    &:hover,&:focus {
+                        color:$phy-navbar-link-hover-color;
+                        background: none;
+                    }
+                }
+
+                &.open
+                {
+                    .dropdown-menu {
+                        font-size: $phy-navbar-font-size;
+                        & > li {
+                            >a {
+                                color: $phy-navbar-link-color;
+                                background: none;
+                                &:hover,&:focus {
+                                    color:$phy-navbar-link-hover-color;
+                                    background: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+
+
+    @media (min-width: $screen-sm-min) {
+        .navbar-nav {
+            display: inline-block;
+            float: none;
+        }
+
+        .navbar-collapse {
+            text-align: center;
+        }
+    }
+
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: $phy-navbar-background-color;
+}
+
+
+
+
+

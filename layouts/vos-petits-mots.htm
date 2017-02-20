@@ -1,0 +1,57 @@
+description = "Vos petits mots"
+
+[staticMenu mainMenu]
+code = "menu"
+
+[staticPage]
+
+
+[scrolltop]
+
+
+[googleTracker]
+==
+{variable tab="Editorial" type="text" name="pageTitle" label="Title"}{/variable}
+
+
+<!DOCTYPE html>
+<html>
+
+    {% partial 'head' %}
+
+    <body id="{{ this.page.layout }}" class="{{ this.page.layout }}">
+
+        {% partial "microdatas" %}
+
+        {% partial 'header' %}
+
+        {% partial 'menu' %}
+
+        <!-- Content -->
+        <section class="page-content">
+            <div class="container">
+                {% partial 'page-title.htm' %}
+                <div class="introduction">
+                    {% placeholder intro title="Introduction" %}
+                </div>
+                <div class="separtor-border"></div>
+                {% page %}
+            </div>       
+        </section>
+
+        <div id="social-bar">
+            {% placeholder social title="Social" %}
+        </div>
+
+        <footer role="contentinfo">
+            {% content 'blocks/footer' %}
+        </footer>
+
+        {% component "scrolltop" %}
+        {% partial "javascript" %}
+
+        {% if config('app.platform')!='Macbook_Alexandre' %}
+        {% component "googleTracker" %}
+        {% endif %}
+    </body>
+</html>

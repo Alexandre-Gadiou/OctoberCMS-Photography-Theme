@@ -1,0 +1,24 @@
+description = "Facebook page box"
+
+[viewBag]
+snippetCode = "FacebookPageBox"
+snippetName = "Facebook Page Box"
+snippetProperties[facebookPageUrl][type] = "string"
+snippetProperties[facebookPageUrl][title] = "URL"
+snippetProperties[width][type] = "string"
+snippetProperties[width][title] = "Width"
+snippetProperties[height][type] = "string"
+snippetProperties[height][title] = "Height"
+snippetProperties[hideCoverPhoto][type] = "checkbox"
+snippetProperties[hideCoverPhoto][title] = "Hide Cover Photo"
+snippetProperties[showFriendsFaces][title] = "Show Friends Faces"
+snippetProperties[showFriendsFaces][type] = "checkbox"
+snippetProperties[showFriendsFaces][default] = 1
+snippetProperties[showFriendsFaces][options][] = ""
+snippetProperties[showPagePosts][type] = "checkbox"
+snippetProperties[showPagePosts][title] = "Show Page Posts"
+
+[facebook_page_box]
+show_friends_faces = 1
+==
+{% component 'facebook_page_box' facebook_page_url=facebookPageUrl width=width height=height hide_cover_photo=hideCoverPhoto show_friends_faces=showFriendsFaces show_page_posts=showPagePosts%}

@@ -1,0 +1,30 @@
+description = "Facebook like button"
+
+[viewBag]
+snippetCode = "FacebookLikeButton"
+snippetName = "Facebook Like Button"
+snippetProperties[facebookPageUrl][type] = "string"
+snippetProperties[facebookPageUrl][title] = "URL"
+snippetProperties[layout][type] = "dropdown"
+snippetProperties[layout][title] = "Layout"
+snippetProperties[layout][default] = "button"
+snippetProperties[layout][options][standard] = "standard"
+snippetProperties[layout][options][box_count] = "box_count"
+snippetProperties[layout][options][button_count] = "button_count"
+snippetProperties[layout][options][button] = "button"
+snippetProperties[actionType][type] = "dropdown"
+snippetProperties[actionType][title] = "Action type"
+snippetProperties[actionType][default] = "like"
+snippetProperties[actionType][options][like] = "like"
+snippetProperties[actionType][options][recommend] = "recommend"
+snippetProperties[includeShareButton][title] = "Share button"
+snippetProperties[includeShareButton][type] = "checkbox"
+snippetProperties[includeShareButton][default] = ""
+snippetProperties[includeShareButton][options][] = ""
+
+[facebook_like_button]
+layout = "button"
+action_type = "like"
+==
+
+{% component 'facebook_like_button' facebook_page_url=facebookPageUrl layout=layout action_type=actionType include_share_button=includeShareButton %}

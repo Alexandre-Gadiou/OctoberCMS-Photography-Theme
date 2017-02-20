@@ -1,0 +1,25 @@
+{
+    "name": "photographytheme",
+    "version": "0.0.0",
+    "description": "OctoberCMS theme for photography",
+    "private": true,
+    "dependencies": {
+        "jquery": "^3.1.1"
+    },
+    "devDependencies": {
+        "bower": "^1.7.9",
+        "gulp-install": "latest",
+        "gulp": "^3.9.1",
+        "del": "latest",
+        "browser-sync": "latest",
+        "gulp-rename": "latest",
+        "gulp-batch": "^1.0.5",
+        "gulp-watch": "^4.3.11",
+        "gulp-clean-css": "^2.2.2",
+        "gulp-sass": "^2.2.0",
+        "gulp-browserify": "^0.5.1",
+        "gulp-uglify": "^2.0.0",
+        "run-sequence": "^1.2.2",
+        "gulp-ejs": "^2.3.0"
+    }
+}

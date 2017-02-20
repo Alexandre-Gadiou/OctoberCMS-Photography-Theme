@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <% include ../partials/head %>
+    </head>
+
+    <body class="a-propos">
+
+        <% include ../partials/header %>
+        <% include ../partials/menu %>
+
+        <!-- Content -->
+        <section class="page-content">
+
+            <div class="row">
+                <div class="col-xs-12 col-md-offset-2 col-md-4">
+                    <%-pageContent%>
+                </div>
+
+                <div class="col-xs-12 col-md-4">   
+                    <%-visitCard%>    
+                    <%-pageSocial%>
+                </div>
+            </div>
+
+        </section>
+        <!--pageContent-->
+
+        <div id="social-bar">
+            <%-pageSocialContent%>
+        </div>
+
+        <% include ../partials/footer %>
+
+        <% include ../partials/javascript %>
+        <% include ../components/scrolltop/scrolltop %>
+
+        <!--{% component "googleTracker" %}-->
+    </body>
+</html>

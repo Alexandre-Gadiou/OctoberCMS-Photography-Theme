@@ -1,0 +1,22 @@
+{
+    "name": "algad/photography-theme",
+    "type": "october-theme",
+    "description": "Photography theme",
+    "keywords": ["algad", "photography", "theme"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexandre Gadiou",
+            "email": "alexandregadiou44@icloud.com",
+            "role": "Founder"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

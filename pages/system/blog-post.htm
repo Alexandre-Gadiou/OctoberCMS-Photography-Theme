@@ -1,0 +1,18 @@
+title = "Post"
+url = "/blog/post/:slug"
+layout = "blog"
+is_hidden = 0
+
+[full_post]
+slug = "{{ :slug }}"
+categoryPage = "system/blog-category"
+==
+<?php
+function onEnd() {
+$this->page->title = $this['post']->title;
+}
+?>
+==
+<div class="blogPost" >
+    {% component 'full_post' %}
+</div>

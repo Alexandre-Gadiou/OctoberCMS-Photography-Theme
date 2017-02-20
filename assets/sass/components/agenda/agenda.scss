@@ -1,0 +1,33 @@
+// agenda.scss
+
+.row > .agenda-wrapper {
+    display: table;
+}
+
+.agenda {
+
+    .responsive-calendar{
+
+        .day {
+            a {
+                background-color: $white;
+                cursor:default;
+            }
+
+            a:hover, a:focus {
+                background-color: $white;
+            }
+        }
+
+        .day.active {
+            a {
+                background-color: $red1;
+            }
+
+            a:hover, a:focus {
+                background-color: saturate($red1,20%);
+            }
+        }
+    }
+
+}

@@ -1,0 +1,64 @@
+description = "À propos"
+
+[staticMenu mainMenu]
+code = "menu"
+
+[staticPage]
+
+
+[scrolltop]
+
+
+[googleTracker]
+==
+{variable tab="Editorial" type="text" name="pageTitle" label="Title"}{/variable}
+
+
+<!DOCTYPE html>
+<html>
+
+    {% partial 'head' %}
+
+    <body id="{{ this.page.layout }}" class="{{ this.page.layout }}">
+
+        {% partial "microdatas" %}
+
+        {% partial 'header' %}
+
+        {% partial 'menu' %}
+
+        <!-- Content -->
+        <section class="page-content">
+
+            <div class="row">
+                <div class="col-xs-12 col-md-offset-2 col-md-10">
+                    {% partial 'page-title.htm' %}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-offset-2 col-md-4">
+                    {% page %}
+                </div>
+                <div class="col-xs-12 col-md-4">             
+                    {% placeholder right title="Zone Droite" %}
+                </div>
+            </div>
+
+        </section>
+
+        <div id="social-bar">
+            {% placeholder social title="Social" %}
+        </div>
+
+        <footer role="contentinfo">
+            {% content 'blocks/footer' %}
+        </footer>
+
+        {% component "scrolltop" %}
+        {% partial "javascript" %}
+
+        {% if config('app.platform')!='Macbook_Alexandre' %}
+        {% component "googleTracker" %}
+        {% endif %}
+    </body>
+</html>

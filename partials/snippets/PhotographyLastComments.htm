@@ -1,0 +1,14 @@
+description = "Display the list of comments"
+
+[viewBag]
+snippetCode = "PhotographyLastComments"
+snippetName = "Photography Last Comment"
+snippetProperties[view|type] = "dropdown"
+snippetProperties[view|title] = "View"
+snippetProperties[view|default] = "default"
+snippetProperties[view|options|default] = "default"
+
+[last_comments]
+==
+
+{% component 'last_comments' view=view %}

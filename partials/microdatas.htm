@@ -1,0 +1,30 @@
+<div itemscope itemtype="http://schema.org/WebSite">
+    <meta itemprop="name" content="{{ this.theme.site_name }}" />
+    <meta itemprop="url" content="{{ this.theme.site_home_url }}" />
+</div>
+
+<div itemscope itemtype="http://schema.org/LocalBusiness">
+    <meta itemprop="name" content="{{ this.theme.site_name }}" />
+    <meta itemprop="url" content="{{ this.theme.site_home_url }}" />
+    <meta itemprop="logo" content="{{ this.theme.site_logo_url }}" />
+    
+    <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        <meta itemprop="streetAddress" content="{{ this.theme.site_owner_address_street }}" />
+        <meta itemprop="postalCode" content="{{ this.theme.site_owner_address_zip }}" />
+        <meta itemprop="addressLocality" content="{{ this.theme.site_owner_address_city }}" />
+        <meta itemprop="addressCountry" content="{{ this.theme.site_owner_address_country }}" />
+    </div>
+    
+    <meta itemprop="telephone" content="{{ this.theme.site_owner_phone }}" />
+    <meta itemprop="email" content="{{ this.theme.site_owner_email }}" />
+    <meta itemprop="sameAs" content="https://www.facebook.com/anneletournelphotographies" />
+    <meta itemprop="sameAs" content="https://plus.google.com/109959017185542851950/about" />
+
+    <div itemprop="founder" itemscope itemtype="http://schema.org/Person">
+        <meta itemprop="name" content="{{ this.theme.site_owner }}" />
+        <meta itemprop="telephone" content="{{ this.theme.site_owner_phone }}" />
+        <meta itemprop="email" content="{{ this.theme.site_owner_email }}" />
+        <meta itemprop="sameAs" content="https://plus.google.com/115304245420732962735/about" />
+        <meta itemprop="sameAs" content="https://fr.linkedin.com/in/anne-letournel-69505a75" />
+    </div>
+</div>

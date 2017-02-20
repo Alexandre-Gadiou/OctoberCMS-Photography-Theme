@@ -1,0 +1,30 @@
+// theme/variables.scss
+
+$white: #FFFFFF;
+$black: #000000;
+
+$pink1:#F789B5;
+$blue1:#0088CC;
+$blue2:#253287;
+$blue3:#337ab7;
+
+$red1: #D9534F;
+
+$default-text-color: #777777;
+
+$primary-link-text-color:lighten($blue2,10%);
+$secondary-link-text-color:$blue3;
+
+$phy-navbar-background-color:$white;
+$phy-navbar-font-size:12px;
+$phy-navbar-link-color: $default-text-color;
+$phy-navbar-link-hover-color: lighten($default-text-color,20%);
+
+$phy-carousel-border-radius: 10px;
+
+$screen-xs-max: 767px;
+$screen-sm-min: 768px;
+$screen-sm-max: 991px;
+$screen-md-min: 992px;
+$screen-md-max: 1199px;
+$screen-lg-min: 1200px;

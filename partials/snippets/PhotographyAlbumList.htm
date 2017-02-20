@@ -1,0 +1,19 @@
+description = "Photos Albums list"
+
+[viewBag]
+snippetCode = "PhotographyAlbumsList"
+snippetName = "Photography Albums List"
+snippetProperties[albumsFolder][title] = "Albums folder"
+snippetProperties[albumsFolder][type] = "string"
+snippetProperties[albumsFolder][default] = "storage/app/media"
+snippetProperties[albumsFolder][options][] = ""
+snippetProperties[view][type] = "dropdown"
+snippetProperties[view][title] = "View"
+snippetProperties[view][default] = "default"
+snippetProperties[view][options][default] = "default"
+
+[album_list]
+albums_folder = "storage/app/media"
+view = "default"
+==
+{% component 'album_list' albums_folder=albumsFolder view=view %}

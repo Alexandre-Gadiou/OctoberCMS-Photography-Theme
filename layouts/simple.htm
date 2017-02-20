@@ -1,0 +1,84 @@
+description = "Simple"
+
+[staticMenu mainMenu]
+code = "menu"
+
+[staticPage]
+
+
+[scrolltop]
+
+
+[googleTracker]
+==
+<?php
+use Algad\Photography\Helpers\PageUtils; 
+
+function onStart()
+{
+session_start();
+
+$this['protectionCode'] = PageUtils::getInstance()->getPageProtectionCode($this->page->url);
+
+$this['hasAccess'] = false;
+if(isset($this['protectionCode']) && !empty($this['protectionCode'])){
+if(isset($_SESSION['accessList'])) {
+$this['hasAccess'] = PageUtils::getInstance()->hasAccessTo($_SESSION['accessList'],$this->page->url);
+}
+} else {
+$this['hasAccess'] = true;
+}
+
+if(isset($_GET['error'])) {
+$this['errorCode']= $_GET['error'];
+}
+
+}
+?>
+==
+{variable tab="Editorial" type="text" name="pageTitle" label="Title"}{/variable}
+{variable tab="Security" type="password" name="protectionCode" label="Password protection"}{/variable}
+
+<!DOCTYPE html>
+<html>
+
+    {% partial 'head' %}
+
+    <body id="{{ this.page.layout }}" class="{{ this.page.layout }}">
+
+        {% partial "microdatas" %}
+
+        {% partial 'header' %}
+
+        {% partial 'menu' %}
+
+        <!-- Content -->
+        <section class="page-content">
+            <div class="container">
+                {% if hasAccess %}
+                {% partial 'page-title.htm' %}
+                {% page %}
+                {% endif %}
+
+                {% if not hasAccess %}
+                {% partial 'page_protection_form.htm' %}
+                {% endif %}
+            </div>       
+        </section>
+
+        <div id="social-bar">
+            {% placeholder social title="Social" %}
+        </div>
+
+        <footer role="contentinfo">
+            {% content 'blocks/footer' %}
+        </footer>
+
+        {% component "scrolltop" %}
+        {% partial "javascript" %}
+
+        {% if config('app.platform')!='Macbook_Alexandre' %}
+        {% component "googleTracker" %}
+        {% endif %}
+    </body>
+</html>

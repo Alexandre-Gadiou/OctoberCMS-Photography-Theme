@@ -1,0 +1,23 @@
+header {
+
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    img {
+        width: 40%;
+        padding-left: 60px;
+        padding-bottom: 10px;
+
+    }
+
+}
+
+@media (max-width: $screen-xs-max) {
+    header {
+        img {
+            width:85%;
+            padding:0;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+// vos-petis-mots.scss
+
+.vos-petits-mots {
+    .introduction{
+        margin-bottom: 50px;
+    }
+
+    div.separtor-border {
+    	@include separtor-border();
+    }
+}

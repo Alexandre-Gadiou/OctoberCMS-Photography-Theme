@@ -1,0 +1,29 @@
+title = "Album"
+url = "/album"
+layout = "simple"
+is_hidden = 0
+
+[album]
+album_folder = "storage/app/media"
+gallery_height = "500px"
+photos_width = "31.5%"
+photos_spacing = "0.5%"
+photos_info = 0
+view = "folio"
+==
+<?php
+function onStart()
+{
+
+if(isset($_GET['path'])) {
+$this['folder'] = $_GET["path"];
+}
+else {
+$this['folder']= "";
+}
+
+}
+?>
+==
+
+{% component 'album' album_folder=folder %}

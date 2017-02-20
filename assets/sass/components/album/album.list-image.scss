@@ -1,0 +1,39 @@
+// album.list-image.scss
+
+.album.list-image
+{
+    width:100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    @include border-radius(6px,6px,6px,6px);
+
+    img {
+        width:100%;
+    }
+}
+
+@media (min-width:$screen-sm-min) and (max-width:$screen-sm-max)
+{
+    .album.list-image
+    {
+        max-height:145px;
+    }
+}
+
+// Tablet
+@media (min-width:$screen-md-min) and (max-width:$screen-md-max)
+{
+    .album.list-image
+    {
+        max-height:180px;
+    }
+}
+
+// Desktop
+@media (min-width:$screen-lg-min)
+{
+    .album.list-image
+    {
+        max-height:240px;
+    }
+}

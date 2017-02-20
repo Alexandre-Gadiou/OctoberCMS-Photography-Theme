@@ -1,0 +1,36 @@
+// comment.scss
+
+
+.comment {
+
+    margin-bottom:50px;
+
+    .title {
+        display: block;
+        font-weight: 700;
+        font-size:18px; 
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        color:#444;
+    }
+
+    .img-circle {
+        width:175px;
+        height:175px;
+    }
+
+    // Mobile
+    @media (max-width:$screen-md-max){
+        .image
+        {
+            margin-bottom: 30px;
+        }
+    }
+
+}
+
+.comment + .comment:before{
+    content:"";
+    @include separtor-border();
+}
+

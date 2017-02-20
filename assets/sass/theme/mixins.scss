@@ -1,0 +1,17 @@
+// theme/mixins.scss
+
+@mixin border-radius($topleft,$topright,$bottomright,$bottomleft) {
+    -webkit-border-radius: $topleft $topright $bottomright $bottomleft;
+    -moz-border-radius: $topleft $topright $bottomright $bottomleft;
+    -ms-border-radius: $topleft $topright $bottomright $bottomleft;
+    border-radius: $topleft $topright $bottomright $bottomleft;          
+}
+
+@mixin separtor-border() {
+    display: block;
+    margin-left: 22%;
+    width:56%;
+    height:1px;
+    background-color: $primary-link-text-color;
+    margin-bottom: 50px;
+}
