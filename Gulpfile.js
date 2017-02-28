@@ -51,7 +51,7 @@ gulp.task('clean:vendor', function () {
 });
 
 gulp.task('ejs', function() {
-  return gulp.src(config.htmlFolder+"pages/*.ejs")
+  return gulp.src(config.htmlFolder+"pages/**/*.ejs")
     .pipe(ejs({
         msg: "Building html static pages"
     }))
